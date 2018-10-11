@@ -1,0 +1,13 @@
+{
+  "apps": [
+    {
+      "name": "backend-api-starter_cron",
+      "script": "dist/server/scripts/z_main.js",
+      "exec_mode": "fork",
+      "instances": 1,
+      "max_memory_restart": "500M",
+      "error_file": "/var/log/pm2/backend-api-starter/err.log",
+      "out_file": "/var/log/pm2/backend-api-starter/out.log"
+    }
+  ]
+}

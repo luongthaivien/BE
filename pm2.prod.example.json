@@ -1,0 +1,13 @@
+{
+  "apps": [
+    {
+      "name": "backend-api-starter-production",
+      "script": "./index.js",
+      "exec_mode": "fork",
+      "instances": 1,
+      "max_memory_restart": "500M",
+      "error_file": "/home/logs/backend-api-starter/production/err.log",
+      "out_file": "/home/logs/backend-api-starter/production/out.log"
+    }
+  ]
+}

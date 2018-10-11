@@ -1,0 +1,64 @@
+{
+  "env": "development",
+  "port": 4041,
+  "jwt_secret": "123qwe!@#",
+  "request_per_second": 1000,
+  "path_uploadfile": "./static/uploads",
+  "databases": {
+    "mysql": {
+      "default": {
+        "host": "localhost",
+        "port": 3306,
+        "user": "root",
+        "password": "root",
+        "database": "backend-api-starter",
+        "charset": "utf8"
+      }
+    },
+    "mongodb": {
+      "default": {
+        "uri": "mongodb://root:rootpassword@localhost:27017/backend-api-starter",
+        "port": 27017,
+        "debug": true,
+        "reconnectTries": 600,
+        "reconnectInterval": 500
+      }
+    },
+    "redis": {
+      "default": {
+        "host": "localhost",
+        "port": 6379
+      }
+    }
+  },
+  "logs": {
+    "path": "../logs/",
+    "mode_configs": {
+      "info": {
+        "mode": "file",
+        "option": {
+          "level": "info",
+          "name": "info",
+          "filename": "filelog-info.log",
+          "json": true
+        }
+      },
+      "error": {
+        "mode": "file",
+        "option": {
+          "level": "error",
+          "name": "error",
+          "filename": "filelog-error.log",
+          "json": true
+        }
+      },
+      "console": {
+        "level": "error",
+        "mode": "console",
+        "option": {
+          "json": true
+        }
+      }
+    }
+  }
+}
