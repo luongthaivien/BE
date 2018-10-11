@@ -2,7 +2,6 @@
   "name": "backend-api-starter",
   "version": "2.3.4",
   "description": "Backend api server with nodejs, mongodb",
-  "author": "Luu Ninh",
   "main": "index.js",
   "private": false,
   "engines": {
@@ -26,8 +25,7 @@
     "docs": "./node_modules/.bin/apidoc -i ./server/routes/open -e node_module/ -o ./docs"
   },
   "repository": {
-    "type": "git",
-    "url": "git@github.com:ninhxuanluu/backend-api-starter.git"
+    "type": "git"
   },
   "apidoc": {
     "version": "1.0.0",
